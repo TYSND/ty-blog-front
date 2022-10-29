@@ -1,7 +1,9 @@
 import axios from 'axios'
-// import { notification } from 'antd';
+import { notification } from 'antd';
+
 // const baseURL = 'http://192.168.31.128:8080/sj'
 const baseURL = 'http://localhost:8081/ty-home/api'
+
 
 const service = axios.create({
     baseURL,
@@ -31,22 +33,29 @@ service.interceptors.response.use(response => {
     }
     if (data.code === "200") {
         return response.data.data
-    } else if (data.code === "401" || data.code === "-1") {
-        // notification['warning']({
-        //     message: '提示',
-        //     description: data.msg
-        // });
-        alert(data.msg);
+    } else if (data.code === "401" ) {
+        notification['warning']({
+            message: '提示',
+            description: data.msg
+        });
+        // history.push("/login");
+        window.location.hash = '/login'
+        // alert(data.msg);
         // Notification.warning({ title: '提示', message: data.msg })
+        // return Promise.reject(new Error(data.msg))
+    } else if (data.code === "400" || data.code === "-1") {
+        notification['warning']({
+            message: '提示',
+            description: data.msg
+        });
         return Promise.reject(new Error(data.msg))
-    } else if (data.code === "400") {
-        alert(data.msg);
+        // alert(data.msg);
     } else {
-        // notification['warning']({
-        //     message: '提示',
-        //     description: '登录凭证过期，请重新登录'
-        // });
-        alert('登录凭证过期，请重新登录');
+        notification['warning']({
+            message: '提示',
+            description: '登录凭证过期，请重新登录'
+        });
+        // alert('登录凭证过期，请重新登录');
         localStorage.clear()
         // router.push('/login')
         return Promise.reject(new Error('登录凭证过期，请重新登录'))
@@ -58,11 +67,11 @@ service.interceptors.response.use(response => {
         verifyWindow.document.write(html)
         verifyWindow.document.getElementById('baseUrl').value = baseURL
     } else {
-        // notification['warning']({
-        //     message: '提示',
-        //     description: '请求超时或服务器错误'
-        // });
-        alert('请求超时或服务器错误');
+        notification['warning']({
+            message: '提示',
+            description: '请求超时或服务器错误'
+        });
+        // alert('请求超时或服务器错误');
         // Notification.warning({ title: '提示', message: '请求超时或服务器错误' })
         return Promise.reject(new Error('请求超时或服务器错误'))
     }

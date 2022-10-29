@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
-import { Outlet } from 'react-router-dom'
+import { useRoutes } from 'react-router-dom'
 import { Suspense } from "react";
-import { useRoutes } from 'react-router-dom';
+
 
 import routes from "./router";
 
@@ -10,6 +9,7 @@ function App() {
   return (
     <div className="App">
         <Suspense fallback={<div>Loading...</div>}>
+            {/*<CustomRouter history={history} />*/}
             {useRoutes(routes)}
         </Suspense>
       {/*<header className="App-header">*/}
