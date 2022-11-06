@@ -2,6 +2,7 @@ import './App.css';
 import { useRoutes } from 'react-router-dom'
 import { Suspense } from "react";
 
+import RouterGuard from "./router/RouterGuard";
 
 import routes from "./router";
 
@@ -10,7 +11,8 @@ function App() {
     <div className="App">
         <Suspense fallback={<div>Loading...</div>}>
             {/*<CustomRouter history={history} />*/}
-            {useRoutes(routes)}
+            {/*{useRoutes(routes)}*/}
+            <RouterGuard></RouterGuard>
         </Suspense>
       {/*<header className="App-header">*/}
       {/*  <img src={logo} className="App-logo" alt="logo" />*/}

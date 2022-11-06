@@ -33,6 +33,7 @@ function LoginPage (props) {
     const login = async () => {
         const formValue = await form.validateFields();
         console.log(formValue);
+        // 回显 form.setFieldsValue(result)
         accountApi.login({
             "account": formValue.account,
             "password": formValue.password
