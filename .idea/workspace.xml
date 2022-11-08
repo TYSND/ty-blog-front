@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0bf5acc-69c3-4bee-8524-69cc0d765339" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/apis/anthology.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/article/list/ArticleListPage.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/RouterGuard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/apis/picture.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/article/write/ArticleWritePage.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/apis/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/apis/article.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/article/list/ArticleListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/article/list/ArticleListPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/LoginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/article/write/ArticleWritePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/article/write/ArticleWritePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Less File" />
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -102,7 +99,9 @@
       <workItem from="1667346980077" duration="6618000" />
       <workItem from="1667436131673" duration="17293000" />
       <workItem from="1667526248668" duration="11160000" />
-      <workItem from="1667699573531" duration="3620000" />
+      <workItem from="1667699573531" duration="16072000" />
+      <workItem from="1667782640382" duration="10587000" />
+      <workItem from="1667913604993" duration="4571000" />
     </task>
     <servers />
   </component>

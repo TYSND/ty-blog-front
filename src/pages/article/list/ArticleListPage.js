@@ -1,4 +1,4 @@
-import { getArticleList } from "../../../api/apis/article";
+import { getArticleListPage } from "../../../api/apis/article";
 import { getAnthologyList } from "../../../api/apis/anthology";
 import {useEffect, useState} from "react";
 import {Button, Input, Pagination} from 'antd';
@@ -55,7 +55,7 @@ function ArticleListPage (props) {
         setPageSize(pageSize)
     }
     const getAnthologyListOuter = () => getAnthologyList()
-    const getArticleListOuter = (title, anthologyId) => getArticleList({
+    const getArticleListOuter = (title, anthologyId) => getArticleListPage({
         "title": title,
         "anthologyId": anthologyId,
         "pager": {
